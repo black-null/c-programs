@@ -11,8 +11,6 @@ int main() {
 		scanf("%d", &arr[i]);
 		occurrence[i] = 1;
 	}
-	//this is my first test
-	//just adding some random comments.!
 	for(int j = 0; j < size; j++) {
         if (occurrence[j]) {
             for (int i = j+1; i < size; i++)
