@@ -2,12 +2,12 @@
 
 int main() {
 	int size;
-	printf("Saisir la taille du tableau : ");
+	printf("Num of elements : ");
 	scanf("%d", &size);
 	int arr[size], occurrence[size];
 	
 	for (int i = 0; i < size; i++) {
-		printf("Entrer l'element %d : ", i+1);
+		printf("Element %d : ", i+1);
 		scanf("%d", &arr[i]);
 		occurrence[i] = 1;
 	}
@@ -16,7 +16,7 @@ int main() {
             for (int i = j+1; i < size; i++)
                 if(arr[i] == arr[j])
                     occurrence[j]++, occurrence[i] = 0;
-			printf("Nombre d'occurence de %d dans Tableau est : %d\n", arr[j] ,occurrence[j]);
+			printf("Nbr of occurences of %d in Table is : %d\n", arr[j] ,occurrence[j]);
         }
 	}
 	return 0;
